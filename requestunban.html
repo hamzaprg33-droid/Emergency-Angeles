@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request Unban – Emergency Angeles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">EMERGENCY ANGELES</div>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="main-card">
+        <h2>Request Unban</h2>
+
+        <form id="unbanForm">
+            <input type="text" name="username" placeholder="Your Username" required>
+
+            <label for="banReason">Ban Reason:</label>
+            <textarea name="banReason" id="banReason" placeholder="Why were you banned?" required></textarea>
+
+            <label for="additionalInfo">Additional Information:</label>
+            <textarea name="additionalInfo" id="additionalInfo" placeholder="Provide any additional info (timestamps, context, etc.)"></textarea>
+
+            <button class="btn dark" type="submit">Send Request</button>
+        </form>
+    </section>
+</main>
+
+<script src="requestunban.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report Player – Emergency Angeles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">EMERGENCY ANGELES</div>
+    <nav>
+        <a href="index.html">Home</a>
+    </nav>
+</header>
+
+<main class="container">
+    <section class="main-card">
+        <h2>Report Player</h2>
+
+        <form id="reportForm" enctype="multipart/form-data">
+            <input type="text" name="player" placeholder="Reported Player" required>
+            <input type="text" name="reporter" placeholder="Your Username" required>
+
+            <label for="reasonCategory">Select reason for report:</label>
+            <select name="reasonCategory" id="reasonCategory" required>
+                <option value="" disabled selected>Select a reason</option>
+                <option value="Exploiting / Hacking">Exploiting / Hacking - The user is performing actions in the game that can only be done using a modified version of Roblox. The actions could include extremely high jumping, faster walking speeds or other irregular forms of activity.</option>
+                <option value="Insulting or disrespectful behavior">Insulting or disrespectful behavior - The user is disrespectful or insults other people using the chat features of the game.</option>
+                <option value="Fail Roleplay or Teaming">Fail Roleplay or Teaming - The user is teaming with others or fails to roleplay.</option>
+                <option value="Impersonating a Staff Member">Impersonating a Staff Member - The user is pretending to be a staff member to receive recognition or advantages in the game.</option>
+                <option value="Intentionally using Game Bugs">Intentionally using Game Bugs - The user is using game bugs to their advantage and affects other players with it.</option>
+                <option value="Placing Items offensively">Placing Items (like Tapes, Cones or Stop Sticks) offensively - The user is using placeable tools to draw symbols that are not allowed on Roblox.</option>
+                <option value="Roblox Terms of Service">Roblox Terms of Service - The user is committing a Roblox Terms of Service violation which is not listed here.</option>
+            </select>
+
+            <label for="clipFile">Attach a file (optional, e.g., clip):</label>
+            <input type="file" name="clipFile" id="clipFile" accept="video/*,image/*">
+
+            <label for="additionalInfo">Additional Information:</label>
+            <textarea name="additionalInfo" id="additionalInfo" placeholder="Provide any additional info (timestamps, context, etc.)"></textarea>
+
+            <button class="btn red" type="submit">Send Report</button>
+        </form>
+    </section>
+</main>
+
+<script src="reportplayer.js"></script>
+</body>
+</html>
