@@ -20,10 +20,10 @@ document.getElementById("reportForm").addEventListener("submit", async e => {
     const embed = {
         title: "🚩 Player Report",
         description:
-            `**Player:** ${player}\n` +
-            `**Reported By:** ${reporter}\n` +
-            `**Reason:** ${reasonCategory}\n` +
-            `**Additional Info:** ${additionalInfo}\n` +
+            `**Player:** ${player}\n\n` +
+            `**Reported By:** ${reporter}\n\n` +
+            `**Reason:** ${reasonCategory}\n\n` +
+            `**Additional Info:** ${additionalInfo}\n\n` +
             `${fileDescription}`,
         color: 15158332
     };
@@ -41,3 +41,4 @@ document.getElementById("reportForm").addEventListener("submit", async e => {
         alert("Error sending report.");
     }
 });
+
