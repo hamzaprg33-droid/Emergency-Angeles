@@ -11,8 +11,8 @@ document.getElementById("unbanForm").addEventListener("submit", async e => {
     const embed = {
         title: "🔓 Unban Request",
         description:
-            `**Username:** ${username}\n` +
-            `**Ban Reason:** ${banReason}\n` +
+            `**Username:** ${username}\n\n` +
+            `**Ban Reason:** ${banReason}\n\n` +
             `**Additional Info:** ${additionalInfo}`,
         color: 3447003
     };
@@ -30,3 +30,4 @@ document.getElementById("unbanForm").addEventListener("submit", async e => {
         alert("Error sending unban request.");
     }
 });
+
